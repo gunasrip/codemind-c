@@ -9,11 +9,11 @@ int prime(int a)
             c++;
             }
             }
-            if(c==2)
+            if(c==2) 
             {
                 return 1;
                 }
-                else
+                else 
                 {
                     return 0;
                     }
@@ -27,11 +27,11 @@ int prime(int a)
                             int a,f,b;
                             scanf("%d",&a);
                             for(int i=a;;i++)
-                            {
+                            { 
                                 if(prime(i))
                                 {
                                     f=i;
-                                    break;
+                                    break; 
                                     }
                                     }
                                     for(int i=a;;i--)
@@ -39,19 +39,20 @@ int prime(int a)
                                         if(prime(i))
                                         {
                                             b=i;
-                                            break;
-                                            }
-                                            }
-                                            int d1=f-a;
-                                            int d2=a-b;
-                                            if(d1>=d2)
-                                            {
-                                                printf("%d
+                                            break; 
+                                            } 
+                                    } 
+                                    int d1=f-a;
+                                    int d2=a-b;
+                                    if(d1>=d2)
+                                    {
+                                        printf("%d
 ",b);
-                                                }
-                                                else 
-                                                {
-                                                    printf("%d
-",f); 
-                                                    
-                                                } } }
+                                        }
+                                        else 
+                                        {
+                                            printf("%d
+",f);
+                                            }
+                                            }
+                                            }
