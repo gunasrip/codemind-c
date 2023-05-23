@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,rev=0,r;
     scanf("%d",&n);
-    int t=n,rev=0;
-    while(n)
+    int t=n;
+    while(n!=0) 
     {
-        int r=n%10;
+        r=n%10;
+        rev=rev*10+r;
         n=n/10;
-        rev=(rev*10)+r;
-    }
-    if(rev==t)
-    {
-        printf("True");
-    }
-    else
-    {
-        printf("False");
-    }
-}
+        }
+        if(rev==t)
+        {
+            printf("True");
+            }
+            else
+            {
+                printf("False");
+                }
+                }
