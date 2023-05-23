@@ -1,22 +1,22 @@
 #include<stdio.h>
 int main()
 {
-    int a=0,b=1,c,n,count=0;
+    int n,c;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++)
+    int a=0,b=1;
+    for(int i=1;
+    i<=n;
+    i++) 
     {
-        if(n==a)
+        c=a+b;
+        if(a==n) 
         {
             printf("True");
-            break;
-        }
-        count++;
-        c=a+b;
-        a=b;
-        b=c;
-    }
-    if(count==n)
-    {
-        printf("False");
-    }
+            return 0;
+            } 
+            a=b; 
+            b=c;
+            }
+            printf("False");
 }
+            
