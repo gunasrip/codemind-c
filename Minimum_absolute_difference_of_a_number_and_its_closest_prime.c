@@ -1,54 +1,47 @@
 #include<stdio.h>
-int prime(int a)
-{
+int prime(int n)
+{ 
     int c=0;
-    for(int i=1;i<=a;i++) 
-    {
-        if(a%i==0)
-        {
+    for(int i=1;i<=n;i++)
+    { 
+        if(n%i==0)
+        { 
             c++;
-            }
-            }
+            } } 
             if(c==2)
             {
-                return 1; 
-            } 
-            else
-            {
-                return 0;
-                }
-                }
-                int main()
+                return 1;
+                } 
+                else
                 {
-                    int a,f,b;
-                    scanf("%d",&a);
-                    for(int i=a;;i++)
+                    return 0;
+                    }}
+                    int main()
                     {
-                        if(prime(i))
-                        {
-                            f=i;
-                            break;
-                            }
-                            }
-                            for(int i=a;;i--)
-                            {
-                                if(prime(i)) 
+                        int n,b,f;
+                        scanf("%d",&n);
+                        for(int i=n;;i++)
+                        { 
+                            if(prime(i))
+                            { 
+                                f=i;
+                                break;
+                                } }
+                                for(int i=n;;i--)
                                 {
-                                    b=i;
-                                    break;
-                                    }
-                                    }
-                                    int d1=f-a;
-                                    int d2=a-b;
-                                    if(d1>=d2)
+                                    if(prime(i))
                                     {
-                                        printf("%d
-",d2);
-                                        }
-                                        else 
+                                        b=i;
+                                        break;
+                                        } }
+                                        int d1=f-n;
+                                        int d2=n-b;
+                                        if(d1<d2)
                                         {
-                                            printf("%d
-",d1); 
+                                            printf("%d",d1); 
+                                            
                                         }
-                    
-                }
+                                        else
+                                        {
+                                            printf("%d",d2);
+                                            }}
